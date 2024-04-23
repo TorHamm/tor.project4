@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'YoungSerif';
+  src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Outfit';
+  color: hsl(30, 10%, 34%);
+}
+
+h1 , h2{
+  font-family: 'YoungSerif';
+  font-weight: 400;
+}
+
+ul , ol{
+  padding-inline-start: 0rem;
+  margin-inline-start: 0.5rem;
+}
+
+li {
+  padding-inline-start: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 8px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+
+li::marker {
+  font-weight: 700;
+}
+
+hr {
+  border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+body {
+  display: flex;
+  place-content: center ;
+  background-color: white;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding: 40px 32px;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.component h1 {
+  font-size: 36px;
+  line-height: 1;
+  color: hsl(24, 5%, 18%);
+}
+
+.component h2 {
+  font-size: 28px;
+}
+
+.component h2 , .component li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  border-radius: 0.75rem;
+  padding: 24px;
+  background-color: hsl(330, 100%, 98%);
+}
+
+.sub h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.sub h3,.sub li::marker{
+  color:hsl(332, 51%, 32%);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 12px 32px;
+}
+
+td b{
+  color: hsl(14, 45%, 36%);
+}
+
+.first {
+  padding: 0 32px 12px 32px;
+}
+
+.last {
+  padding: 12px 32px 0 32px
+}
+
+@media only screen and (min-width: 767px){
+
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    row-gap: 40px;
+    padding: 40px;
+    border-radius: 1.5rem;
+    background-color: white;
+  }
+
+  .image img {
+    max-width: none;
+    height: 300px;
+    border-radius: .75rem;
+  }
+
+  .recipe {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1024px){
+  body {
+    height: 1955px;
+  }
+}
